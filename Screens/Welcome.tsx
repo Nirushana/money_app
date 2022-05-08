@@ -19,6 +19,7 @@ const TopSection =  styled.View`
 const TopImage = styled.Image`
   width: 100%;
   height: 100%;
+
 `
 const BottomSection = styled.View`
   width: 100%;
