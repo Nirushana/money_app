@@ -25,8 +25,10 @@ interface ButtonProps {
 
 const RegularButton: FunctionComponent<ButtonProps> = (props) => {
   return (
-    <ButtonView onPress={props.onPress}>
-      <RegularText>Button</RegularText>
+    <ButtonView onPress={props.onPress} style={props.btnStyles}>
+      <RegularText textStyles={props.textStyles}>{props.children}</RegularText>
     </ButtonView>
   );
 };
+
+export default RegularButton;
