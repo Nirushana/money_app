@@ -1,7 +1,7 @@
 import React from "react";
 import Welcome from "./Screens/Welcome";
-import AppLoading from 'expo-app-loading';
-import { useFonts } from 'expo-font';
+import AppLoading from "expo-app-loading";
+import { useFonts } from "expo-font";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -9,11 +9,8 @@ export default function App() {
     "Lato-Reqular": require("./assets/fonts/Lato-Regular.ttf"),
   });
 
-  if(!fontsLoaded){
+  if (!fontsLoaded) {
     return <AppLoading />;
   }
-  return (
-    <Welcome />
-  );
+  return <Welcome />;
 }
-
