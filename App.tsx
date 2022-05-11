@@ -1,9 +1,8 @@
 import React from "react";
-import Welcome from "./Screens/Welcome";
+// import Welcome from "./Screens/Welcome";
 import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
 import RootStack from "./navigators/RookStack";
-import 'react-native-gesture-handler'
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -14,5 +13,5 @@ export default function App() {
   if (!fontsLoaded) {
     return <AppLoading />;
   }
-  return <RootStack />;
+  return (<RootStack />);
 }

@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 
 //React Navigation
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 //Screen
 import Welcome from '../Screens/Welcome'
@@ -11,7 +11,7 @@ export type RootStackParamList = {
     Welcome: undefined;
 }
 
-const Stack = createStackNavigator<RootStackParamList>();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const RootStack: FunctionComponent = () => {
     return(
