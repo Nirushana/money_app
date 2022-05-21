@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from "react";
 import styled from "styled-components/native";
 import { CardSectionProps } from "./types";
+import CardItem from "./CardItem";
 
 //components
 const CardList = styled.FlatList`
@@ -21,7 +22,7 @@ const CardSection: FunctionComponent<CardSectionProps> = (props) => {
         alignItems: "center",
       }}
       keyExtractor={({ id }: any) => id.toString()}
-      renderItem={}
+      renderItem={({ item }: any)=> <CardItem {...item}/>}
     />
   );
 };
